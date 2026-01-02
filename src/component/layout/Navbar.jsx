@@ -136,7 +136,7 @@ const Navbar = () => {
 
           {/* GRADIENT NAVBAR */}
           <div
-            className="flex-1 py-4 sm:py-6 md:py-8 px-4 sm:px-6 md:px-8 lg:px-12 relative"
+            className="flex-1 py-4 sm:py-6 md:py-8 px-4 sm:px-6 md:px-8 lg:px-12 relative flex items-center justify-end md:justify-center"
             style={{
               background: "linear-gradient(to right, #72CB64, #058DAF)",
               clipPath: "polygon(3% 0, 100% 0, 100% 100%, 0% 100%, 0 95%)",
