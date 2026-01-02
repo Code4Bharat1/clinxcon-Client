@@ -7,13 +7,13 @@ const founder = {
   name: "Almas Sayed",
   role: "FOUNDER & CEO",
   // qualifications: "MBBS, F. Diab., MBA, FPIPA (UK)",
-  company: "ClinXcel",
+  company: "Clinxcon",
   img: "/founder.png",
   desc: `ALmas Sayed
 Founder & CEO
 
 A seasoned professional with 21+ years of experience across pharma, healthcare, corporate training, quality management, audit support, and business development. 
-Almas currently leads ClinXcel in delivering end-to-end consulting solutions that enhance operational efficiency and enable pharma and biotech organizations to independently manage their own business processes.
+Almas currently leads Clinxcon in delivering end-to-end consulting solutions that enhance operational efficiency and enable pharma and biotech organizations to independently manage their own business processes.
 An expert in upskilling and cross-skilling corporate teams, Almas has worked with esteemed organizations including Wipro, Tata Consultancy Services (TCS), Cognizant, SIRO Clinpharm, CREMA, Spanco International, and Wadia Hospital. 
 She is a Certified Lead Auditor in QMS (ISO 9001:2008 & ISO 22000), an ICH-GCP–certified trainer from TCS, and holds a TTT certification from NPTEL.
 With deep expertise in leadership development, communication, strategic planning, emotional intelligence, and decision-making.

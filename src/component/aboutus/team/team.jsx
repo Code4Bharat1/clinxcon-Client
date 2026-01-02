@@ -66,7 +66,7 @@ Dr. Athira Ajith is an MBBS, MD (Pharmacology) professional with strong experien
     desc: `Rukaiyah
 PV Drug Safety Associate
 
-B.Pharm graduate with hands-on experience in research, pharmaceutical operations, and pharmacovigilance. Interned at IIT Bombay, and at Manbro Pharmaceuticals, gaining exposure to production and GMP workflows. Currently working with ClinXcel supporting ICSR case processing, literature management, and documentation activities. Published academic research in nanoemulgel formulation and skilled in analysis, communication, organization, and basic German (A2).`,
+B.Pharm graduate with hands-on experience in research, pharmaceutical operations, and pharmacovigilance. Interned at IIT Bombay, and at Manbro Pharmaceuticals, gaining exposure to production and GMP workflows. Currently working with Clinxcon supporting ICSR case processing, literature management, and documentation activities. Published academic research in nanoemulgel formulation and skilled in analysis, communication, organization, and basic German (A2).`,
   },
   {
     id: 5,
@@ -76,7 +76,7 @@ B.Pharm graduate with hands-on experience in research, pharmaceutical operations
     desc: `Sushma 
 PV Database Expert 
 
-A dedicated B.Pharm professional currently working as a Pharmacovigilance Project Coordinator at ClinXcel Research, supporting PV operations including ICSR case processing (beginner level), literature search & management, SOP drafting, training coordination, and audit/inspection readiness. Previously interned in Quality Control at Micro Labs Ltd, gaining hands-on exposure to QC processes and documentation. Strong in communication, attention to detail, and quick learning, with growing expertise across drug safety, clinical research documentation, and regulatory workflows—ready to contribute effectively to evolving PV and clinical operations roles.`,
+A dedicated B.Pharm professional currently working as a Pharmacovigilance Project Coordinator at Clinxcon Research, supporting PV operations including ICSR case processing (beginner level), literature search & management, SOP drafting, training coordination, and audit/inspection readiness. Previously interned in Quality Control at Micro Labs Ltd, gaining hands-on exposure to QC processes and documentation. Strong in communication, attention to detail, and quick learning, with growing expertise across drug safety, clinical research documentation, and regulatory workflows—ready to contribute effectively to evolving PV and clinical operations roles.`,
   },
 ];
 
