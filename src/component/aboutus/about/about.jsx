@@ -77,7 +77,7 @@ const About = () => {
                   max-w-[480px] w-full
                   h-[320px] sm:h-[380px] md:h-[440px] lg:h-[500px]">
     <img
-      src="/Whyclinxcon.png"
+      src="/whyclinxcon.png"
       alt="Why Clinxcon"
       className="w-full h-full object-cover"
     />

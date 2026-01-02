@@ -98,7 +98,7 @@ export default function PharmacovigilanceConsulting() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 lg:gap-6">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-4 sm:gap-5 lg:gap-6">
-            {features.slice(0, 4).map((f) => (
+            {features.slice(0, 3).map((f) => (
               <div key={f.id}>
                 {/* Button */}
                 <button
@@ -127,7 +127,7 @@ export default function PharmacovigilanceConsulting() {
 
           {/* RIGHT COLUMN */}
           <div className="flex flex-col gap-4 sm:gap-5 lg:gap-6">
-            {features.slice(4, 7).map((f) => (
+            {features.slice(3, 7).map((f) => (
               <div key={f.id}>
                 {/* Button */}
                 <button
