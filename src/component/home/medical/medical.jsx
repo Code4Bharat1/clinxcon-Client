@@ -1,10 +1,14 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function MedicalBanner() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
+
+  /* 🔒 width locking */
+  const measureRef = useRef(null);
+  const [maxWidth, setMaxWidth] = useState(null);
 
   const slides = [
     { image: "/image1.png", lines: ["WELCOME TO", "Clinxcon"] },
@@ -25,9 +29,17 @@ export default function MedicalBanner() {
     return () => clearInterval(interval);
   }, [slides.length, isMounted]);
 
+  /* measure widest headline */
+  useLayoutEffect(() => {
+    if (!measureRef.current) return;
+    const widths = Array.from(measureRef.current.children).map(el =>
+      el.getBoundingClientRect().width
+    );
+    setMaxWidth(Math.max(...widths));
+  }, []);
+
   if (!isMounted) {
     return (
-
       <div
         className="relative w-full overflow-hidden shadow-xl min-h-[350px] sm:min-h-[400px] md:min-h-[450px] bg-cover bg-center"
         style={{ backgroundImage: `url('${slides[0].image}')` }}
@@ -55,6 +67,16 @@ export default function MedicalBanner() {
 
   return (
     <div className="relative w-full overflow-hidden mt-3 sm:mt-4 lg:mt-5 shadow-xl min-h-[400px] sm:min-h-[480px] md:min-h-[550px]">
+
+      {/* 🔒 hidden width probe — does NOT affect layout */}
+      <div className="absolute opacity-0 pointer-events-none">
+        <div ref={measureRef} style={franklinFont} className="text-6xl font-semibold uppercase whitespace-nowrap">
+          {slides.flatMap(s => s.lines).map((line, i) => (
+            <div key={i}>{line}</div>
+          ))}
+        </div>
+      </div>
+
       {/* === Background Slideshow === */}
       <div className="absolute inset-0 z-0">
         {slides.map((slide, index) => (
@@ -68,8 +90,7 @@ export default function MedicalBanner() {
             <div className="absolute inset-0 bg-black opacity-25"></div>
           </div>
         ))}
-      </div>
-
+      </div>              
       {/* === LEFT / RIGHT ARROW BUTTONS === */}
 <button
   onClick={(e) => {
@@ -99,12 +120,11 @@ export default function MedicalBanner() {
   ›
 </button>
 
-
       {/* === Banner Content === */}
       <div className="relative flex flex-col min-h-[400px] sm:min-h-[480px] md:min-h-[550px] md:flex-row">
-        
-        {/* ================= MOBILE VIEW ================= */}
-        <div className="block md:hidden relative w-full px-4 py-8 sm:px-6 sm:py-10 flex flex-col justify-center text-white z-20 min-h-[400px] sm:min-h-[460px]">
+
+        {/* MOBILE */}
+        <div className="block md:hidden relative w-full px-4 py-8 flex flex-col justify-center text-white z-20">
           <div
             className="absolute inset-0 z-0"
             style={{
@@ -115,21 +135,19 @@ export default function MedicalBanner() {
             }}
           ></div>
 
-          <div className="relative z-10 text-center backdrop-blur-[3px] px-2">
+          <div
+            className="relative z-10 text-center backdrop-blur-[3px] px-2"
+            style={{ width: maxWidth ? `${maxWidth}px` : "auto", margin: "0 auto" }}
+          >
             <AnimatePresence mode="wait">
-              <motion.div
-                key={currentIndex}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-              >
+              <motion.div key={currentIndex} initial="hidden" animate="visible" exit="exit">
                 {slides[currentIndex].lines.map((line, i) => (
                   <motion.h2
                     key={i}
                     custom={i}
                     variants={lineVariants}
                     style={franklinFont}
-                    className="text-2xl xs:text-3xl sm:text-4xl font-semibold text-white leading-tight sm:leading-snug tracking-tight uppercase"
+                    className="text-2xl sm:text-4xl font-semibold uppercase"
                   >
                     {line}
                   </motion.h2>
@@ -139,35 +157,28 @@ export default function MedicalBanner() {
           </div>
         </div>
 
-        {/* ================= DESKTOP VIEW ================= */}
+        {/* DESKTOP */}
         <div
-          className="hidden md:flex relative w-[55%] lg:w-[57%] xl:w-[55%]   w-[45%] lg:w-[48%] xl:w-[45%] w-[35%] lg:w-[38%] xl:w-[35%] p-8 lg:p-10 xl:p-14 flex-col justify-center text-white z-20 backdrop-blur-[5px] min-h-[480px] lg:min-h-[500px]"
+          className="hidden md:flex relative w-[55%] p-10 flex-col justify-center text-white z-20 backdrop-blur-[5px]"
           style={{
             clipPath: "polygon(0 0, 100% 0, 92% 50%, 100% 100%, 0 100%)"
-
-
-
-,
-
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-[#68c07e]/80 via-[#469d8b]/75 to-[#1a6e87]/70 opacity-[0.9] z-0"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#68c07e]/80 via-[#469d8b]/75 to-[#1a6e87]/70 z-0"></div>
 
-          <div className="relative z-10 -translate-y-[30px] lg:-translate-y-[40px] translate-x-[-5px] lg:translate-x-[-10px] text-left">
+          <div
+            className="relative z-10 -translate-y-[30px] text-left"
+            style={{ width: maxWidth ? `${maxWidth}px` : "auto" }}
+          >
             <AnimatePresence mode="wait">
-              <motion.div
-                key={currentIndex}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-              >
+              <motion.div key={currentIndex} initial="hidden" animate="visible" exit="exit">
                 {slides[currentIndex].lines.map((line, i) => (
                   <motion.h2
                     key={i}
                     custom={i}
                     variants={lineVariants}
                     style={franklinFont}
-                    className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white leading-tight lg:leading-snug tracking-tight uppercase"
+                    className="text-5xl xl:text-6xl font-semibold uppercase"
                   >
                     {line}
                   </motion.h2>
@@ -176,24 +187,7 @@ export default function MedicalBanner() {
             </AnimatePresence>
           </div>
         </div>
-
-        {/* === Right Side (Unused spacing) === */}
-        <div className="relative w-full md:w-[65%] lg:w-[62%] xl:w-[65%] min-h-[400px] sm:min-h-[480px] md:min-h-[500px] lg:min-h-[575px] mt-0 md:mt-10"></div>
-      </div>
-
-      {/* === Slider Dots === */}
-      <div className="absolute bottom-3 sm:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-1.5 sm:space-x-2 z-30">
-        {slides.map((_, index) => (
-          <div
-            key={index}
-            className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-500 ${
-              currentIndex === index
-                ? "bg-white scale-110 shadow-md"
-                : "bg-white/70"
-            }`}
-          ></div>
-        ))}
       </div>
     </div>
   );
-} 
+}

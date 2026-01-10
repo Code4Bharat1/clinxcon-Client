@@ -130,13 +130,13 @@ const Navbar = () => {
             <img
               src="/logo3.png"
               alt="Clinxcon Logo"
-              className="w-[90px] h-[65px] sm:w-[110px] sm:h-[80px] md:w-[120px] md:h-[90px] lg:w-[140px] lg:h-[105px] xl:w-[170px] xl:h-[125px] object-contain"
+              className="w-[80px] h-[48px] sm:w-[95px] sm:h-[55px] md:w-[105px] md:h-[60px] lg:w-[120px] lg:h-[68px] xl:w-[140px] xl:h-[80px] object-contain"
             />
            </div>
 
           {/* GRADIENT NAVBAR */}
           <div
-            className="flex-1 py-4 sm:py-6 md:py-8 px-4 sm:px-6 md:px-8 lg:px-12 relative flex items-center justify-end md:justify-center"
+            className="flex-1 py-1 sm:py-6 md:py-8 px-4 sm:px-6 md:px-8 lg:px-12 relative flex items-center justify-end md:justify-center"
             style={{
               background: "linear-gradient(to right, #72CB64, #058DAF)",
               clipPath: "polygon(3% 0, 100% 0, 100% 100%, 0% 100%, 0 95%)",
