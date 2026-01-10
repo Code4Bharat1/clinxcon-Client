@@ -19,11 +19,11 @@ import { useRef } from "react";
     className="w-full max-w-[200px] sm:max-w-[240px] md:max-w-[270px] lg:max-w-[300px]"
   >
     <Image
-      src="/image 200.png"
+      src="/logo.png"
       alt="Clinxcon Graphic"
       width={300}
       height={330}
-      className="object-contain drop-shadow-xl w-full h-auto scale-x-[-1]"
+      className="object-cover w-full h-auto"
     />
   </motion.div>
 </div>
@@ -70,14 +70,14 @@ import { useRef } from "react";
       <div ref={imageRef} className="flex-1 flex justify-center items-center w-full">
         <motion.div
           
-          className="w-full max-w-[200px] sm:max-w-[240px] md:max-w-[270px] lg:max-w-[300px]"
+          className="w-full max-w-[200px] sm:max-w-[240px] md:max-w-[270px] lg:max-w-[300px] bg-white"
         >
           <Image
-            src="/image 200.png"
+            src="/logo.png"
             alt="Clinxcon Graphic"
             width={300}
             height={330}
-            className="object-contain drop-shadow-xl w-full h-auto scale-x-[-1]"
+            className="object-cover w-full h-auto"
           />
         </motion.div>
       </div>

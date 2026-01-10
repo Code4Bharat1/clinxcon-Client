@@ -12,7 +12,7 @@ const page = () => {
       < WhyClinxcon/>
        <MissionVision/>
         {/* <AboutUsHome/> */}
-      <TestimonialsSection/>
+      {/* <TestimonialsSection/> */}
       
     </div>
   )
