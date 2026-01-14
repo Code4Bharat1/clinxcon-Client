@@ -128,9 +128,9 @@ const Navbar = () => {
           {/* LOGO */}
            <div className="py-1 pl-1 sm:pl-2 ml-1 sm:ml-2 md:ml-3 lg:ml-4 flex-shrink-0">
             <img
-              src="/logo3.png"
+              src="/logo2.png"
               alt="Clinxcon Logo"
-              className="w-[80px] h-[48px] sm:w-[95px] sm:h-[55px] md:w-[105px] md:h-[60px] lg:w-[120px] lg:h-[68px] xl:w-[140px] xl:h-[80px] object-contain"
+              className="w-[70px] h-[48px] sm:w-[95px] sm:h-[55px] md:w-[105px] md:h-[60px] lg:w-[120px] lg:h-[68px] xl:w-[140px] xl:h-[80px] object-contain"
             />
            </div>
 
