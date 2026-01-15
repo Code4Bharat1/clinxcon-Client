@@ -126,11 +126,11 @@ const Navbar = () => {
         <div className="w-full shadow-md flex gap-2 sm:gap-4 relative">
 
           {/* LOGO */}
-           <div className="py-1 pl-1 sm:pl-2 ml-1 sm:ml-2 md:ml-3 lg:ml-4 flex-shrink-0">
+           <div className="py-1 pl-1 sm:pl-2 ml-1 sm:ml-2 md:ml-3 lg:ml-4 shrink-0">
             <img
               src="/logo2.png"
               alt="Clinxcon Logo"
-              className="w-[70px] h-[48px] sm:w-[95px] sm:h-[55px] md:w-[105px] md:h-[60px] lg:w-[120px] lg:h-[68px] xl:w-[140px] xl:h-[80px] object-contain"
+              className="w-[70px] h-12 sm:w-[95px] sm:h-[55px] md:w-[105px] md:h-[60px] lg:w-[120px] lg:h-[68px] xl:w-[140px] xl:h-20 object-contain"
             />
            </div>
 
@@ -247,7 +247,7 @@ const Navbar = () => {
 
         {/* MOBILE MENU */}
         {menuOpen && (
-          <div className="md:hidden mt-2 bg-white rounded-xl shadow-lg text-center py-4 sm:py-6 space-y-3 font-semibold text-sm mx-3 text-black z-[20000]">
+          <div className="md:hidden mt-2 bg-white rounded-xl shadow-lg text-center py-4 sm:py-6 space-y-3 font-semibold text-sm mx-3 text-black z-20000">
 
             <a href="/" onClick={() => setMenuOpen(false)} className="block py-1 hover:text-[#058DAF] cursor-pointer">
               Home
