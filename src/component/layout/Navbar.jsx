@@ -130,7 +130,7 @@ const Navbar = () => {
             <img
               src="/logo2.png"
               alt="Clinxcon Logo"
-              className="w-[70px] h-12 sm:w-[95px] sm:h-[55px] md:w-[105px] md:h-[60px] lg:w-[120px] lg:h-[68px] xl:w-[140px] xl:h-20 object-contain"
+              className="w-96 h-12 sm:w-[95px] sm:h-[55px] md:w-[105px] md:h-[60px] lg:w-[120px] lg:h-[68px] xl:w-[140px] xl:h-20 object-contain"
             />
            </div>
 
@@ -285,13 +285,13 @@ const Navbar = () => {
               </summary>
               <div className="mt-2 space-y-2">
                 <a href="/consulting" onClick={() => setMenuOpen(false)} className="block py-2 hover:bg-gray-100 cursor-pointer">
-                  Pharmacovigilance Consulting
+                   X-Vigil | PV Consulting
                 </a>
                 <a href="/corporate" onClick={() => setMenuOpen(false)} className="block py-2 hover:bg-gray-100 cursor-pointer">
-                  Corporate Training
+                  X-Skills | Domain Training
                 </a>
                 <a href="/soft-skills" onClick={() => setMenuOpen(false)} className="block py-2 hover:bg-gray-100 cursor-pointer">
-                  Soft Skills Training
+                 X-Comms | Soft Skills training
                 </a>
               </div>
             </details>
