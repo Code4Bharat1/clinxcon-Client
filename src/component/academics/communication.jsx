@@ -1,18 +1,17 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
-function SoftSkills() {
+function Communication() {
   const sliderRef = useRef(null);
   const [sliderWidth, setSliderWidth] = useState(0);
 
-  const softSkillCards = [
-    { title: "Strategic Communication for Leaders", img: "/soft-skill.jpg" },
-    { title: "Emotional Intelligence (EQ) for Leaders", img: "/soft-skill.jpg" },
-    { title: "Stakeholder & Client Management", img: "/soft-skill.jpg" },
-    { title: "Coaching & Mentoring Skills", img: "/soft-skill.jpg" },
-    { title: "Ask for your customized topic", img: "/soft-skill.jpg" },
+  const communicationCards = [
+    { title: "Professional Communication Fundamentals", img: "/soft-skill.jpg" },
+    { title: "Corporate Etiquette & Workplace Behavior", img: "/soft-skill.jpg" },
+    { title: "Presentation & Public Speaking Skills", img: "/soft-skill.jpg" },
+    { title: "Documentation & Email Writing Skills", img: "/soft-skill.jpg" },
+    { title: "Customized Communication Training", img: "/soft-skill.jpg" },
   ];
 
   useEffect(() => {
@@ -34,27 +33,32 @@ function SoftSkills() {
 
         {/* HEADER */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 ml-2 sm:ml-3 md:ml-5 mb-4">
-          Soft Skills
+          Communication
         </h2>
 
         {/* PARAGRAPH */}
         <div className="max-w-5xl ml-2 sm:ml-3 md:ml-5 mb-8">
           <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-[1.9] text-justify">
-            <span className="font-semibold text-gray-900">X-Comms</span> is ClinXcon’s soft skills training initiative designed for corporate professionals aspiring to move into managerial and leadership roles. In today’s workplace, strong communication and interpersonal skills are essential for sustained success. Even with solid technical expertise, gaps in soft skills can restrict career growth—especially during performance appraisals.
-At ClinXcon, we address this through structured, practical, and role-focused training that builds confidence, improves workplace effectiveness, and prepares professionals for promotions and leadership responsibilities.
-With X-Comms, you don’t fall behind due to non-technical gaps—you grow, progress, and excel.
-
+            <span className="font-semibold text-gray-900">X-Comms</span> is ClinXcon’s focused training and mentoring program designed to build essential soft skills and professional communication for Pharmacy and life sciences students and early-career professionals. The program helps learners transition confidently from academic environments into the corporate world.
+            <br /><br />
+            X-Comms enhances workplace communication, stakeholder interaction, documentation clarity, presentation skills, and professional conduct—enabling students to collaborate effectively, express ideas clearly, and perform with confidence in corporate and regulatory settings.
+            <br /><br />
+            By strengthening personal effectiveness, teamwork, and leadership readiness, X-Comms prepares students not just for their first job—but for long-term professional growth.
+            <br /><br />
+            <span className="font-semibold text-gray-900">
+              Communicate better. Perform stronger. Grow faster.
+            </span>
           </p>
         </div>
 
         {/* BANNER */}
         <img
           src="/button.png"
-          alt="Soft Skills Banner"
+          alt="Communication Banner"
           className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mb-6 h-auto"
         />
 
-        {/* SLIDER – SAME AS COURSES */}
+        {/* SLIDER */}
         <div className="relative w-full overflow-hidden">
           <motion.div
             ref={sliderRef}
@@ -62,7 +66,7 @@ With X-Comms, you don’t fall behind due to non-technical gaps—you grow, prog
             animate={{ x: ["0%", `-${sliderWidth / 2}px`] }}
             transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
           >
-            {[...softSkillCards, ...softSkillCards].map((card, index) => (
+            {[...communicationCards, ...communicationCards].map((card, index) => (
               <motion.div
                 key={index}
                 className="min-w-[250px] sm:min-w-[280px] lg:min-w-[300px]
@@ -95,7 +99,7 @@ With X-Comms, you don’t fall behind due to non-technical gaps—you grow, prog
                     {card.title}
                   </motion.h4>
 
-                  {/* LEARN MORE */}
+                  {/* BUTTON */}
                   <motion.button
                     whileHover={{ scale: 1.08 }}
                     whileTap={{ scale: 0.95 }}
@@ -122,4 +126,5 @@ With X-Comms, you don’t fall behind due to non-technical gaps—you grow, prog
     </section>
   );
 }
-export default SoftSkills
+
+export default Communication;

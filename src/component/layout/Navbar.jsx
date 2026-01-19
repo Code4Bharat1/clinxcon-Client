@@ -128,7 +128,7 @@ const Navbar = () => {
           {/* LOGO */}
            <div className="py-1 pl-1 sm:pl-2 ml-1 sm:ml-2 md:ml-3 lg:ml-4 shrink-0">
             <img
-              src="/logo2.png"
+              src="/logo2.5.png"
               alt="Clinxcon Logo"
               className="w-96 h-12 sm:w-[95px] sm:h-[55px] md:w-[105px] md:h-[60px] lg:w-[120px] lg:h-[68px] xl:w-[140px] xl:h-20 object-contain"
             />
@@ -375,13 +375,13 @@ const Navbar = () => {
           onClick={(e) => e.stopPropagation()}
         >
            <a href="/consulting" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
-            Pharmacovigilance Consulting
+            •	X-Vigil | PV Consulting
           </a>
           <a href="/corporate" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
-            Corporate Training
+            •	X-Skills | Domain Training
           </a>
           <a href="/soft-skills" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
-            Soft Skills Training
+            •	X-Comms | Soft Skills training
           </a>
         </div>,
         document.body
@@ -401,16 +401,19 @@ const Navbar = () => {
           onClick={(e) => e.stopPropagation()}
         >
           <a href="/academics" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
-            Domain Courses
+            X-Shala | Campus Training
           </a>
-          <a href="" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
-            Communication
+          <a href="/academics/communication" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
+            X-Comms | Soft Skills & Communication
           </a>
-          <a href="" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
-            Internship Programs
+          <a href="/academics/internship" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
+            X-Interns | Internship Programs
           </a>
-          <a href="" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
-            Placement Assistance
+          <a href="/academics/interview" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
+           X-Talent | Interview Guidance Program
+          </a>
+          <a href="/academics/placement" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
+           X-Connect | Placement Assistance
           </a>
         </div>,
         document.body

@@ -3,7 +3,12 @@ import React from "react";
 
 export default function MissionVision() {
   return (
-    <div className="py-8 sm:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 bg-white ml-0 sm:ml-8 md:ml-12 lg:ml-20 mt-6 sm:mt-8 lg:mt-10 mr-0 sm:mr-6 md:mr-10 lg:mr-15 flex justify-center">
+    <div className="py-8 sm:py-10 lg:py-12 
+                    px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 
+                    bg-white 
+                    mt-6 sm:mt-8 lg:mt-10 
+                    flex justify-center">
+      
       <div className="w-full max-w-7xl">
         {/* Dark Gray Top Divider */}
         <div className="border-t border-gray-700"></div>
@@ -23,7 +28,6 @@ export default function MissionVision() {
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
               To be a trusted global partner in Pharmacovigilance consulting, empowering pharmaceutical companies to achieve excellence in drug safety and compliance through strategic expertise, innovation, and unwavering quality.
-
             </p>
           </div>
         </div>
@@ -46,7 +50,6 @@ export default function MissionVision() {
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
               To strengthen global drug safety by empowering organizations to build and optimize effective in-house Pharmacovigilance capabilities, integrating our PV and medical expertise with evolving regulatory expectations and appropriate technologies to ensure efficient, compliant, and patient-centric safety systems.
-
             </p>
           </div>
         </div>

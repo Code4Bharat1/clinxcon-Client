@@ -167,9 +167,11 @@ export default function MedicalBanner() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#68c07e]/80 via-[#469d8b]/75 to-[#1a6e87]/70 z-0"></div>
 
           <div
-            className="relative z-10 -translate-y-[30px] text-left"
-            style={{ width: maxWidth ? `${maxWidth}px` : "auto" }}
-          >
+  className="relative z-10 -translate-y-[30px] text-left
+             px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20"
+  style={{ width: maxWidth ? `${maxWidth}px` : "auto" }}
+>
+
             <AnimatePresence mode="wait">
               <motion.div key={currentIndex} initial="hidden" animate="visible" exit="exit">
                 {slides[currentIndex].lines.map((line, i) => (

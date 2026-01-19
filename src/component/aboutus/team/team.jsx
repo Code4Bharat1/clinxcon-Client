@@ -88,7 +88,7 @@ const Team = () => {
 
       {/* HEADER */}
       <section className="max-w-7xl mx-auto px-4 pt-12 md:pt-16 pb-6">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 ml-2 sm:ml-3 md:ml-5 mb-4 sm:mb-5 md:mb-6 relative inline-block">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 ml-2 sm:ml-3 md:ml-5 mb-6 relative inline-block">
           Our Team
         </h2>
       </section>
@@ -114,18 +114,22 @@ const Team = () => {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-[200px] h-[240px] sm:w-[220px] sm:h-[260px] object-contant"
+                  className="w-[200px] h-[240px] sm:w-[220px] sm:h-[260px] object-contain"
                 />
               </div>
 
-             <h3 className="mt-4 text-xl sm:text-2xl md:text-3xl font-bold text-black text-center md:text-left">
-  {member.name}
-</h3>
-
-
-              <h3 className="mt-4 text-lg sm:text-xl md:text-2xl font-bold text-black text-center md:text-left">
-                {member.role}
+              {/* NAME – GRADIENT */}
+              <h3 className="mt-4 text-xl sm:text-2xl md:text-3xl font-bold text-center md:text-left
+                bg-gradient-to-r from-[#0F766E] via-[#0891B2] to-[#2563EB]
+                bg-clip-text text-transparent break-words">
+                {member.name}
               </h3>
+
+              {/* ROLE – SLIGHTLY SMALLER + WRAP */}
+              <h4 className="mt-2 text-sm sm:text-base md:text-lg font-semibold text-black
+                text-center md:text-left break-words leading-snug">
+                {member.role}
+              </h4>
             </motion.div>
 
             {/* RIGHT – CONTENT ONLY */}
@@ -135,7 +139,8 @@ const Team = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-              <p className="mt-1 text-base sm:text-lg md:text-[19px] lg:text-[20px] leading-relaxed text-black font-normal whitespace-pre-line text-justify">
+              <p className="mt-1 text-sm sm:text-base md:text-[18px] lg:text-[19px]
+                leading-relaxed text-black font-normal whitespace-pre-line text-justify">
                 {member.desc.split("\n").slice(2).join("\n")}
               </p>
             </motion.div>
