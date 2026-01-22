@@ -302,13 +302,13 @@ const Navbar = () => {
               </summary>
               <div className="mt-2 space-y-2">
                 <a href="/academics" onClick={() => setMenuOpen(false)} className="block py-2 hover:bg-gray-100 cursor-pointer">
-                  Domain Courses
+                  X-Shala | Campus Training
                 </a>
                 <a href="" onClick={() => setMenuOpen(false)} className="block py-2 hover:bg-gray-100 cursor-pointer">
-                  Communication
+                  X-Comms | Soft Skills
                 </a>
                 <a href="" onClick={() => setMenuOpen(false)} className="block py-2 hover:bg-gray-100 cursor-pointer">
-                  Internship Programs
+                  X-Interns | Internship Programs
                 </a>
                 <a href="" onClick={() => setMenuOpen(false)} className="block py-2 hover:bg-gray-100 cursor-pointer">
                   Placement Assistance
@@ -404,16 +404,16 @@ const Navbar = () => {
             X-Shala | Campus Training
           </a>
           <a href="/academics/communication" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
-            X-Comms | Soft Skills & Communication
+            X-Comms | Soft Skills
           </a>
           <a href="/academics/internship" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
             X-Interns | Internship Programs
           </a>
           <a href="/academics/interview" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
-           X-Talent | Interview Guidance Program
+           X-Talent | Interview Guidance
           </a>
           <a href="/academics/placement" className="block px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
-           X-Connect | Placement Assistance
+           X-Connect | Placement 
           </a>
         </div>,
         document.body

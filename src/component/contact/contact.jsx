@@ -67,9 +67,8 @@ const ContactPage = () => {
                 <div>
                   <h3 className="font-bold text-black text-sm mb-1">Address</h3>
                   <p className="text-gray-700 text-xs leading-relaxed">
-                    M.N Road, Sonapur lane Near<br />
-                    Manisha Plaza Kurla(W),<br />
-                    Mumbai - 400070
+                    Kurla West Mumbai-400070<br />
+                    Upper Thane<br />
                   </p>
                 </div>
               </div>
@@ -96,7 +95,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-black text-sm mb-1">Email Us</h3>
-                  <p className="text-gray-700 text-xs">almassayed.edu@gmail.com</p>
+                  <p className="text-gray-700 text-xs">clinxcon26@gmail.com</p>
                 </div>
               </div>
             </div>

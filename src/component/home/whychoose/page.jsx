@@ -1,32 +1,21 @@
 "use client";
+
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
 
- function WhyClinxcon() {
+function WhyClinxcon() {
   const router = useRouter();
   const sectionRef = useRef(null);
-  const imageRef = useRef(null);
 
-  {/* Right Section — Center Scale Animation */}
-<div ref={imageRef} className="flex-1 flex justify-center items-center w-full">
-  <motion.div
-    initial={{ scale: 0.6, opacity: 0 }}
-    whileInView={{ scale: 1, opacity: 1 }}
-    transition={{ duration: 0.7, ease: "easeOut" }}
-    viewport={{ once: true, amount: 0.4 }}
-    className="w-full max-w-[200px] sm:max-w-[240px] md:max-w-[270px] lg:max-w-[300px]"
-  >
-    <Image
-      src="/logo.png"
-      alt="Clinxcon Graphic"
-      width={300}
-      height={330}
-      className="object-cover w-full h-auto"
-    />
-  </motion.div>
-</div>
+  // Scroll-based animation
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "center center"],
+  });
+
+  const imageScale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
 
   return (
     <motion.div
@@ -42,12 +31,12 @@ import { useRef } from "react";
       {/* Left Section */}
       <div className="flex-1 ml-0 md:ml-8 lg:ml-15 space-y-4 sm:space-y-5 lg:space-y-6">
         <p className="text-gray-700 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
-          <span className="font-semibold text-green-700">ClinXcon</span> comprises a dynamic team backed by hands-on experience in pharmacovigilance training and a wide range of PV services and operational activities. 
+          <span className="font-semibold text-green-700">ClinXcon</span> comprises a dynamic team backed by hands-on experience in pharmacovigilance training and a wide range of PV services and operational activities.
           <br /><br />
-          We deliver end-to-end Pharmacovigilance consulting services supported by state-of-the-art processes, ensuring our clients remain risk-free and <span className="font-semibold text-green-700">Anytime Inspection Ready (AIR)</span>.
+          We deliver end-to-end Pharmacovigilance consulting services supported by state-of-the-art processes, ensuring our clients remain risk-free and{" "}
+          <span className="font-semibold text-green-700">Anytime Inspection Ready (AIR)</span>.
           <br /><br />
-          <span className="font-semibold text-green-700">
-          Based in Mumbai, India,</span> we enable seamless communication, faster turnaround times, and customized client-centric solutions.
+          <span className="font-semibold text-green-700">Based in Mumbai, India,</span> we enable seamless communication, faster turnaround times, and customized client-centric solutions.
         </p>
 
         <button
@@ -66,10 +55,11 @@ import { useRef } from "react";
         </button>
       </div>
 
-      {/* Right Section — Simple Scroll Animation */}
-      <div ref={imageRef} className="flex-1 flex justify-center items-center w-full">
+      {/* Right Section — Scroll Scale Animation */}
+      <div className="flex-1 flex justify-center items-center w-full">
         <motion.div
-          
+          style={{ scale: imageScale }}
+          transition={{ type: "spring", stiffness: 120, damping: 20 }}
           className="w-full max-w-[200px] sm:max-w-[240px] md:max-w-[270px] lg:max-w-[300px] bg-white"
         >
           <Image
