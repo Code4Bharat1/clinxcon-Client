@@ -10,7 +10,7 @@ const WhyClinxcon = () => {
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black">
           Why{" "}
           <span className="font-semibold text-green-700">
-            Clinxcon
+            ClinXcon
           </span>
         </h2>
       </div>
@@ -22,8 +22,8 @@ const WhyClinxcon = () => {
         <div className="flex justify-center lg:justify-start">
           <div className="relative rounded-[32px] overflow-hidden shadow-2xl max-w-[480px] w-full">
             <img
-              src="/whyclinxcon.jpg"   // replace with your image
-              alt="Why Clinxcon"
+              src="/whyclinxcon.jpg"
+              alt="Why ClinXcon"
               className="w-full h-full object-cover"
             />
           </div>
@@ -32,7 +32,7 @@ const WhyClinxcon = () => {
         {/* RIGHT – TEXT */}
         <div>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[1.9] text-black text-justify max-w-xl">
-            Clinxcon has established itself as a trusted global partner in
+            ClinXcon has established itself as a trusted global partner in
             Pharmacovigilance, leveraging over a decade of expertise in an
             ever-evolving regulatory landscape. With our modular and end-to-end
             Drug Safety solutions, supported by regulatory-compliant database

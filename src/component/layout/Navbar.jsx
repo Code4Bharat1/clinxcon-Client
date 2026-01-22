@@ -126,7 +126,7 @@ const Navbar = () => {
         <div className="w-full shadow-md flex gap-2 sm:gap-4 relative">
 
           {/* LOGO */}
-           <div className="py-1 pl-1 sm:pl-2 ml-1 sm:ml-2 md:ml-3 lg:ml-4 shrink-0">
+           <div className="py-1 pl-1 sm:pl-2 ml-1 sm:ml-2 md:ml-3 lg:ml-4 shrink-0 mt-1">
             <img
               src="/logo2.5.png"
               alt="Clinxcon Logo"

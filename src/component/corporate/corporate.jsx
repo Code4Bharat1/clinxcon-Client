@@ -49,7 +49,7 @@ function Corporate() {
           className="max-w-5xl ml-2 sm:ml-3 md:ml-5 mb-14"
         >
           <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-[1.9] text-justify">
-            <span className="font-semibold text-gray-900">X-Skills</span> is ClinXcon’s
+            <span className="font-semibold text-green-600">X-Skills</span> is <span className="font-semibold text-green-600">ClinXcon</span>’s
             domain-focused corporate training initiative designed for professionals
             across CROs, pharma, and healthcare IT. Our programs strengthen role-based
             expertise, regulatory awareness, and audit readiness through

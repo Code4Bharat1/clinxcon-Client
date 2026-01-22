@@ -61,7 +61,8 @@ function CoursesSection() {
         </h2>
 
         <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed max-w-5xl ml-2 sm:ml-3 md:ml-5 mb-8 text-justify">
-          <strong>X-Shala</strong> is ClinXcon’s dedicated academic training platform for Medical, Pharmacy, and Life Sciences graduates.
+          <strong>X-Shala</strong> is{" "}
+          <span className="font-bold text-green-600">ClinXcon</span>’s dedicated academic training platform for Medical, Pharmacy, and Life Sciences graduates.
           Our programs are specialized, hands-on, and career-focused, carefully designed to bridge the gap between classroom learning and industry expectations.
           With practical learning, real-world case studies, and industry-aligned modules, X-Shala equips students with strong subject knowledge,
           practical skills, and career readiness for roles in Clinical Research, Pharmacovigilance, Clinical Data Management, Medical Writing,
@@ -107,7 +108,6 @@ function CoursesSection() {
               >
                 <div className="relative flex flex-col h-full">
 
-                  {/* IMAGE (FIXED HEIGHT) */}
                   <div className="relative h-48 sm:h-52 md:h-60 bg-gradient-to-br from-gray-800 to-gray-900 overflow-hidden">
                     <motion.img
                       src={course.img}
@@ -118,7 +118,6 @@ function CoursesSection() {
                     />
                   </div>
 
-                  {/* CONTENT (FIXED HEIGHT ADDED ✅) */}
                   <div className="min-h-[200px] sm:min-h-[220px] bg-gradient-to-br from-gray-900 via-gray-900 to-black text-[#6AB365] p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center text-center">
                     <motion.h4 className="text-base sm:text-lg md:text-xl font-bold mb-3">
                       {course.title}

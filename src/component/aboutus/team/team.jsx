@@ -66,7 +66,9 @@ Dr. Athira Ajith is an MBBS, MD (Pharmacology) professional with strong experien
     desc: `Rukaiyah
 PV Drug Safety Associate
 
-B.Pharm graduate with hands-on experience in research, pharmaceutical operations, and pharmacovigilance. Interned at IIT Bombay, and at Manbro Pharmaceuticals, gaining exposure to production and GMP workflows. Currently working with Clinxcon supporting ICSR case processing, literature management, and documentation activities. Published academic research in nanoemulgel formulation and skilled in analysis, communication, organization, and basic German (A2).`,
+B.Pharm graduate with hands-on experience in research, pharmaceutical operations, and pharmacovigilance. Interned at IIT Bombay, and at Manbro Pharmaceuticals, gaining exposure to production and GMP workflows. Currently working with 
+<span className="font-bold text-green-700">ClinXcon</span> 
+supporting ICSR case processing, literature management, and documentation activities. Published academic research in nanoemulgel formulation and skilled in analysis, communication, organization, and basic German (A2).`,
   },
   {
     id: 5,
@@ -76,7 +78,9 @@ B.Pharm graduate with hands-on experience in research, pharmaceutical operations
     desc: `Sushma 
 PV Database Expert 
 
-A dedicated B.Pharm professional currently working as a Pharmacovigilance Project Coordinator at Clinxcon Research, supporting PV operations including ICSR case processing (beginner level), literature search & management, SOP drafting, training coordination, and audit/inspection readiness. Previously interned in Quality Control at Micro Labs Ltd, gaining hands-on exposure to QC processes and documentation. Strong in communication, attention to detail, and quick learning, with growing expertise across drug safety, clinical research documentation, and regulatory workflows—ready to contribute effectively to evolving PV and clinical operations roles.`,
+A dedicated B.Pharm professional currently working as a Pharmacovigilance Project Coordinator at 
+<span className="font-bold text-green-700">ClinXcon</span> 
+Research, supporting PV operations including ICSR case processing (beginner level), literature search & management, SOP drafting, training coordination, and audit/inspection readiness. Previously interned in Quality Control at Micro Labs Ltd, gaining hands-on exposure to QC processes and documentation. Strong in communication, attention to detail, and quick learning, with growing expertise across drug safety, clinical research documentation, and regulatory workflows—ready to contribute effectively to evolving PV and clinical operations roles.`,
   },
 ];
 
@@ -118,21 +122,19 @@ const Team = () => {
                 />
               </div>
 
-              {/* NAME – GRADIENT */}
               <h3 className="mt-4 text-xl sm:text-2xl md:text-3xl font-bold text-center md:text-left
                 bg-gradient-to-r from-[#0F766E] via-[#0891B2] to-[#2563EB]
                 bg-clip-text text-transparent break-words">
                 {member.name}
               </h3>
 
-              {/* ROLE – SLIGHTLY SMALLER + WRAP */}
               <h4 className="mt-2 text-sm sm:text-base md:text-lg font-semibold text-black
                 text-center md:text-left break-words leading-snug">
                 {member.role}
               </h4>
             </motion.div>
 
-            {/* RIGHT – CONTENT ONLY */}
+            {/* RIGHT – CONTENT */}
             <motion.div
               variants={rightVariant}
               initial="hidden"

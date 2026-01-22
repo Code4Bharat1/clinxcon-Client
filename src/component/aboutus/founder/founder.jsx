@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 const founder = {
   name: "Almas Sayed",
   role: "FOUNDER & CEO",
-  company: "Clinxcon",
+  company: "ClinXcon",
   img: "/founder.png",
-  desc: `ALmas Sayed
+  desc: `Almas Sayed
 Founder & CEO
 
 Almas Sayed is a dynamic and versatile professional with 24+ years of experience across pharma, healthcare, pharmacovigilance, quality management, audit and inspection support, corporate training, and leadership development.
@@ -88,7 +88,9 @@ const Founder = () => {
             </p>
 
             <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-black">
-              {founder.company}
+              <span className="font-bold text-green-700">
+                {founder.company}
+              </span>
             </p>
           </motion.div>
 

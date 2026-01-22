@@ -39,11 +39,23 @@ function Communication() {
         {/* PARAGRAPH */}
         <div className="max-w-5xl ml-2 sm:ml-3 md:ml-5 mb-8">
           <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-[1.9] text-justify">
-            <span className="font-semibold text-gray-900">X-Comms</span> is ClinXcon’s focused training and mentoring program designed to build essential soft skills and professional communication for Pharmacy and life sciences students and early-career professionals. The program helps learners transition confidently from academic environments into the corporate world.
+            <span className="font-semibold text-gray-900">X-Comms</span> is{" "}
+            <span className="font-bold text-green-700">ClinXcon</span>’s focused
+            training and mentoring program designed to build essential soft
+            skills and professional communication for Pharmacy and life sciences
+            students and early-career professionals. The program helps learners
+            transition confidently from academic environments into the
+            corporate world.
             <br /><br />
-            X-Comms enhances workplace communication, stakeholder interaction, documentation clarity, presentation skills, and professional conduct—enabling students to collaborate effectively, express ideas clearly, and perform with confidence in corporate and regulatory settings.
+            X-Comms enhances workplace communication, stakeholder interaction,
+            documentation clarity, presentation skills, and professional
+            conduct—enabling students to collaborate effectively, express ideas
+            clearly, and perform with confidence in corporate and regulatory
+            settings.
             <br /><br />
-            By strengthening personal effectiveness, teamwork, and leadership readiness, X-Comms prepares students not just for their first job—but for long-term professional growth.
+            By strengthening personal effectiveness, teamwork, and leadership
+            readiness, X-Comms prepares students not just for their first
+            job—but for long-term professional growth.
             <br /><br />
             <span className="font-semibold text-gray-900">
               Communicate better. Perform stronger. Grow faster.
@@ -75,7 +87,6 @@ function Communication() {
                 whileHover={{ y: -12, scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >
-                {/* IMAGE */}
                 <div className="relative h-48 sm:h-52 md:h-60 bg-gray-900 overflow-hidden">
                   <motion.img
                     src={card.img}
@@ -86,11 +97,11 @@ function Communication() {
                   />
                 </div>
 
-                {/* CONTENT */}
-                <div className="flex-grow bg-gradient-to-br from-gray-900 via-gray-900 to-black
-                                text-[#6AB365] p-4 sm:p-5 md:p-6
-                                flex flex-col items-center justify-center text-center relative">
-
+                <div
+                  className="flex-grow bg-gradient-to-br from-gray-900 via-gray-900 to-black
+                             text-[#6AB365] p-4 sm:p-5 md:p-6
+                             flex flex-col items-center justify-center text-center relative"
+                >
                   <motion.h4
                     className="text-base sm:text-lg md:text-xl font-bold mb-4 min-h-[3.5rem]
                                flex items-center justify-center"
@@ -99,7 +110,6 @@ function Communication() {
                     {card.title}
                   </motion.h4>
 
-                  {/* BUTTON */}
                   <motion.button
                     whileHover={{ scale: 1.08 }}
                     whileTap={{ scale: 0.95 }}

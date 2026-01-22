@@ -39,17 +39,33 @@ function Internship() {
         {/* PARAGRAPH */}
         <div className="max-w-5xl ml-2 sm:ml-3 md:ml-5 mb-8">
           <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-[1.9] text-justify">
-            At <span className="font-semibold text-gray-900">ClinXcon</span>, our internships focus on practical training, expert mentoring, and live system exposure—enabling students to confidently transition from academics to industry.
+            At{" "}
+            <span className="font-bold text-green-700">ClinXcon</span>, our
+            internships focus on practical training, expert mentoring, and live
+            system exposure—enabling students to confidently transition from
+            academics to industry.
             <br /><br />
-            <span className="font-semibold text-gray-900">Internship Tracks Available</span>
+            <span className="font-semibold text-gray-900">
+              Internship Tracks Available
+            </span>
             <br /><br />
-            <span className="font-semibold text-gray-900">• Pharmacovigilance (PV):</span> ICSR processing, SAE/ADR/SUSAR assessment, MedDRA coding, reporting timelines, live database exposure
+            <span className="font-semibold text-gray-900">
+              • Pharmacovigilance (PV):
+            </span>{" "}
+            ICSR processing, SAE/ADR/SUSAR assessment, MedDRA coding, reporting
+            timelines, live database exposure
             <br />
-            <span className="font-semibold text-gray-900">• Clinical Data Management (CDM):</span> CRF review, query management, data quality fundamentals
+            <span className="font-semibold text-gray-900">
+              • Clinical Data Management (CDM):
+            </span>{" "}
+            CRF review, query management, data quality fundamentals
             <br />
-            <span className="font-semibold text-gray-900">• Clinical Research:</span> ICH-GCP basics, protocols, monitoring & documentation
+            <span className="font-semibold text-gray-900">
+              • Clinical Research:
+            </span>{" "}
+            ICH-GCP basics, protocols, monitoring & documentation
           </p>
-        </div>                
+        </div>
       </div>
     </section>
   );

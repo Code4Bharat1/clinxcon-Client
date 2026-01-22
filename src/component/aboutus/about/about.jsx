@@ -17,7 +17,7 @@ const About = () => {
               </h2>
 
               <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[1.9] text-justify text-black max-w-xl">
-                <span className="font-semibold text-green-700">Clinxcon</span>{" "}
+                <span className="font-bold text-green-700">ClinXcon</span>{" "}
                 delivers specialized Pharmacovigilance training and consulting
                 services designed to support organizations in building robust,
                 compliant, and inspection-ready safety systems. Our approach
@@ -33,7 +33,7 @@ const About = () => {
             <div className="relative rounded-[28px] overflow-hidden shadow-xl w-full max-w-[460px] h-full">
               <img
                 src="/about.png"
-                alt="About Clinxcon"
+                alt="About ClinXcon"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -51,15 +51,15 @@ const About = () => {
             <div>
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-10">
                 Why{" "}
-                <span className="text-green-700 font-semibold">
-                  Clinxcon ?
+                <span className="font-bold text-green-700">
+                  ClinXcon ?
                 </span>
               </h2>
 
               <div className="relative rounded-[32px] overflow-hidden shadow-2xl w-full max-w-[480px] h-full">
                 <img
                   src="/whyclinxcon.png"
-                  alt="Why Clinxcon"
+                  alt="Why ClinXcon"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -69,13 +69,14 @@ const About = () => {
           {/* RIGHT – TEXT */}
           <div className="flex flex-col justify-start">
             <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[1.9] text-justify text-black max-w-xl">
-              ClinXcon work closely with start-up innovators, growing companies,
+              <span className="font-bold text-green-700">ClinXcon</span>{" "}
+              works closely with start-up innovators, growing companies,
               and established pharma and biotech organizations, offering tailored
               solutions that address real-world challenges across the PV
               lifecycle. From hands-on training to process design, SOP
               implementation, audit preparedness, and operational support,
-              ClinXcon focuses on solutions that are both effective and
-              sustainable.
+              <span className="font-bold text-green-700"> ClinXcon</span>{" "}
+              focuses on solutions that are both effective and sustainable.
             </p>
 
             <p className="mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-black">

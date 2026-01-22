@@ -39,9 +39,15 @@ function Interview() {
         {/* INTRO PARAGRAPH */}
         <div className="max-w-5xl ml-2 sm:ml-3 md:ml-5 mb-6">
           <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-[1.9] text-justify">
-            At <span className="font-semibold text-gray-900">ClinXcon</span>, our Interview Guidance Program is designed to help students and early professionals crack interviews with confidence and industry readiness.
+            At{" "}
+            <span className="font-bold text-green-700">ClinXcon</span>, our
+            Interview Guidance Program is designed to help students and early
+            professionals crack interviews with confidence and industry
+            readiness.
             <br /><br />
-            We have a specialized team of industry experts who train candidates across HR rounds, technical interviews, and behavioral assessments—ensuring complete interview preparedness.
+            We have a specialized team of industry experts who train candidates
+            across HR rounds, technical interviews, and behavioral
+            assessments—ensuring complete interview preparedness.
           </p>
         </div>
 
@@ -55,7 +61,8 @@ function Interview() {
             <span className="font-semibold text-gray-900">
               • HR Interview Preparation:
             </span>{" "}
-            confidence building, body language, salary discussions, and professional etiquette
+            confidence building, body language, salary discussions, and
+            professional etiquette
             <br />
             <span className="font-semibold text-gray-900">
               • Technical Interview Training:

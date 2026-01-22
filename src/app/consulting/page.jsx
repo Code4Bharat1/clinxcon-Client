@@ -7,8 +7,8 @@ const page = () => {
   return (
     <div>
       <ConsultingSection/>
-      {/* <AboutSection/> */}
-      {/* <FeaturesSection/> */}
+      <AboutSection/>
+      <FeaturesSection/>
     </div>
   )
 }

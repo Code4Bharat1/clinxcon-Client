@@ -40,12 +40,19 @@ function Placement() {
         <div className="max-w-5xl ml-2 sm:ml-3 md:ml-5 mb-8">
           <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-[1.9] text-justify">
             <span className="font-semibold text-gray-900">
-              X-Connect | Placement Assistance at ClinXcon – Bridging Talent with Opportunity
+              X-Connect | Placement Assistance at{" "}
+              <span className="font-bold text-green-600">ClinXcon</span> – Bridging Talent with Opportunity
             </span>
             <br /><br />
-            At <span className="font-semibold text-gray-900">ClinXcon</span>, we don’t just train—you get guided placement support to help you step confidently into the healthcare and clinical research industry.
+            At{" "}
+            <span className="font-bold text-green-600">ClinXcon</span>, we don’t
+            just train—you get guided placement support to help you step
+            confidently into the healthcare and clinical research industry.
             <br /><br />
-            Our Placement Assistance Program connects trained candidates with hospitals, CROs, SMOs, BA/BE centers, healthcare IT companies, and pharma organizations—aligning skills with real-world job opportunities.
+            Our Placement Assistance Program connects trained candidates with
+            hospitals, CROs, SMOs, BA/BE centers, healthcare IT companies, and
+            pharma organizations—aligning skills with real-world job
+            opportunities.
           </p>
         </div>
 

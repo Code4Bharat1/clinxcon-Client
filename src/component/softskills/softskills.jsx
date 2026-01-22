@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 function SoftSkills() {
   const sliderRef = useRef(null);
@@ -40,10 +39,9 @@ function SoftSkills() {
         {/* PARAGRAPH */}
         <div className="max-w-5xl ml-2 sm:ml-3 md:ml-5 mb-8">
           <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-[1.9] text-justify">
-            <span className="font-semibold text-gray-900">X-Comms</span> is ClinXcon’s soft skills training initiative designed for corporate professionals aspiring to move into managerial and leadership roles. In today’s workplace, strong communication and interpersonal skills are essential for sustained success. Even with solid technical expertise, gaps in soft skills can restrict career growth—especially during performance appraisals.
-At ClinXcon, we address this through structured, practical, and role-focused training that builds confidence, improves workplace effectiveness, and prepares professionals for promotions and leadership responsibilities.
-With X-Comms, you don’t fall behind due to non-technical gaps—you grow, progress, and excel.
-
+            <span className="font-semibold text-green-600">ClinXcon</span> is <span className="font-semibold text-green-600">ClinXcon</span>’s soft skills training initiative designed for corporate professionals aspiring to move into managerial and leadership roles. In today’s workplace, strong communication and interpersonal skills are essential for sustained success. Even with solid technical expertise, gaps in soft skills can restrict career growth—especially during performance appraisals.
+            At <span className="font-semibold text-green-600">ClinXcon</span>, we address this through structured, practical, and role-focused training that builds confidence, improves workplace effectiveness, and prepares professionals for promotions and leadership responsibilities.
+            With X-Comms, you don’t fall behind due to non-technical gaps—you grow, progress, and excel.
           </p>
         </div>
 
@@ -122,4 +120,5 @@ With X-Comms, you don’t fall behind due to non-technical gaps—you grow, prog
     </section>
   );
 }
-export default SoftSkills
+
+export default SoftSkills;
